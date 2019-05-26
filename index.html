@@ -3,7 +3,8 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>中国文化复兴践行者-王永新为建国70周年献礼</title>
 	<link rel="shortcut icon" href="image/favicon.png">
@@ -16,7 +17,38 @@
 				EFFECT: 'slide'
 			},
 			MUSIC: 'http://ps4fzlt6t.bkt.clouddn.com/music.mp3',
-			DESW: 375
+			DESW: 375,
+			LOADING: [
+				"http://ps4fzlt6t.bkt.clouddn.com/beijing1.png",
+				"http://ps4fzlt6t.bkt.clouddn.com/beijing2.png",
+				"http://ps4fzlt6t.bkt.clouddn.com/beijing3.png",
+				"http://ps4fzlt6t.bkt.clouddn.com/beijing4.png",
+				"http://ps4fzlt6t.bkt.clouddn.com/beijing5.png",
+				"http://ps4fzlt6t.bkt.clouddn.com/beijing6.png",
+				"http://ps4fzlt6t.bkt.clouddn.com/favicon.png",
+				"http://ps4fzlt6t.bkt.clouddn.com/page1_di.png",
+				"http://ps4fzlt6t.bkt.clouddn.com/page1_ji.png",
+				"http://ps4fzlt6t.bkt.clouddn.com/page1_pin.png",
+				"http://ps4fzlt6t.bkt.clouddn.com/page1_quan.png",
+				"http://ps4fzlt6t.bkt.clouddn.com/page1_zhang.png",
+				"http://ps4fzlt6t.bkt.clouddn.com/page1_zuo.png",
+				"http://ps4fzlt6t.bkt.clouddn.com/sample.png",
+				"http://ps4fzlt6t.bkt.clouddn.com/yinhao.png",
+				"http://ps4fzlt6t.bkt.clouddn.com/yinhao0.png",
+				"http://ps4fzlt6t.bkt.clouddn.com/zuopin1-1.jpg",
+				"http://ps4fzlt6t.bkt.clouddn.com/zuopin1.jpg",
+				"http://ps4fzlt6t.bkt.clouddn.com/zuopin10.jpg",
+				"http://ps4fzlt6t.bkt.clouddn.com/zuopin2-2.jpg",
+				"http://ps4fzlt6t.bkt.clouddn.com/zuopin2.jpg",
+				"http://ps4fzlt6t.bkt.clouddn.com/zuopin3-3.jpg",
+				"http://ps4fzlt6t.bkt.clouddn.com/zuopin3.jpg",
+				"http://ps4fzlt6t.bkt.clouddn.com/zuopin4.jpg",
+				"http://ps4fzlt6t.bkt.clouddn.com/zuopin5.jpg",
+				"http://ps4fzlt6t.bkt.clouddn.com/zuopin6.jpg",
+				"http://ps4fzlt6t.bkt.clouddn.com/zuopin7.jpg",
+				"http://ps4fzlt6t.bkt.clouddn.com/zuopin8.jpg",
+				"http://ps4fzlt6t.bkt.clouddn.com/zuopin9.jpg"
+			]
 		};
 	</script>
 
@@ -26,34 +58,47 @@
 </head>
 
 <body>
+	<!-- LOADING -->
+	<div id="LOADINGBOX"
+		style="position: fixed;top:0;left:0;z-index:999;width: 100%;height: 100%;background: #000;overflow: hidden;">
+		<img src="http://img.zhufengpeixun.cn/loading/loading.gif" alt=""
+			style="position:absolute;width:100%;top: 1rem;left: 0;">
+		<p style="color: #AAA;position:absolute;width:100%;top: 4rem;left: 0;text-align: center;font-size: .16rem;">
+			当前已经加载：
+			<span id="CURRENT">0%</span>
+		</p>
+	</div>
+
 	<!-- MAIN #MAINBOX -->
 	<main class="mainBox" id="MAINBOX">
 		<!-- PAGE1 -->
 		<div class="page1">
 			<div class="common">
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing1.png" alt="" class="ani" swiper-animate-effect='slideInDown'>
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing2.png" alt="" class="ani" swiper-animate-effect='slideInUp'>
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing4.png" alt="" class="ani" swiper-animate-effect='slideInLeft'
-					swiper-animate-delay='.5s'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing1.png" alt="" class="ani"
+					swiper-animate-effect='slideInDown'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing2.png" alt="" class="ani"
+					swiper-animate-effect='slideInUp'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing4.png" alt="" class="ani"
+					swiper-animate-effect='slideInLeft' swiper-animate-delay='.5s'>
 			</div>
 
 			<div class="con">
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing6.png" alt="" class="ani" swiper-animate-effect='fadeIn'
-					swiper-animate-delay='1s'>
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/page1_zuo.png" alt="" class="ani" swiper-animate-effect='fadeIn'
-					swiper-animate-delay='1.2s'>
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/page1_pin.png" alt="" class="ani" swiper-animate-effect='fadeIn'
-					swiper-animate-delay='1.4s'>
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/page1_di.png" alt="" class="ani" swiper-animate-effect='fadeIn'
-					swiper-animate-delay='1.6s'>
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/page1_ji.png" alt="" class="ani" swiper-animate-effect='fadeIn'
-					swiper-animate-delay='1.8s'>
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/page1_zhang.png" alt="" class="ani" swiper-animate-effect='fadeIn'
-					swiper-animate-delay='2s'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing6.png" alt="" class="ani"
+					swiper-animate-effect='fadeIn' swiper-animate-delay='1s'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/page1_zuo.png" alt="" class="ani"
+					swiper-animate-effect='fadeIn' swiper-animate-delay='1.2s'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/page1_pin.png" alt="" class="ani"
+					swiper-animate-effect='fadeIn' swiper-animate-delay='1.4s'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/page1_di.png" alt="" class="ani"
+					swiper-animate-effect='fadeIn' swiper-animate-delay='1.6s'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/page1_ji.png" alt="" class="ani"
+					swiper-animate-effect='fadeIn' swiper-animate-delay='1.8s'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/page1_zhang.png" alt="" class="ani"
+					swiper-animate-effect='fadeIn' swiper-animate-delay='2s'>
 				<img src="http://ps4fzlt6t.bkt.clouddn.com/sample.png" alt="" class="ani" swiper-animate-effect='fadeIn'
 					swiper-animate-delay='2.2s'>
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/page1_quan.png" alt="" class="ani" swiper-animate-effect='fadeIn'
-					swiper-animate-delay='2.4s'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/page1_quan.png" alt="" class="ani"
+					swiper-animate-effect='fadeIn' swiper-animate-delay='2.4s'>
 				<span class="ani" swiper-animate-effect='fadeIn' swiper-animate-delay='2.6s'>王永新</span>
 			</div>
 		</div>
@@ -61,17 +106,19 @@
 		<!-- PAGE2 -->
 		<div class="page2">
 			<div class="common">
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing1.png" alt="" class="ani" swiper-animate-effect='slideInDown'>
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing2.png" alt="" class="ani" swiper-animate-effect='slideInUp'>
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing4.png" alt="" class="ani" swiper-animate-effect='slideInLeft'
-					swiper-animate-delay='.5s'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing1.png" alt="" class="ani"
+					swiper-animate-effect='slideInDown'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing2.png" alt="" class="ani"
+					swiper-animate-effect='slideInUp'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing4.png" alt="" class="ani"
+					swiper-animate-effect='slideInLeft' swiper-animate-delay='.5s'>
 			</div>
 
 			<div class="yin">
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/yinhao0.png" alt="" class="ani" swiper-animate-effect='bounceInLeft'
-					swiper-animate-delay='.5s'>
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/yinhao.png" alt="" class="ani" swiper-animate-effect='bounceInRight'
-					swiper-animate-delay='.5s'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/yinhao0.png" alt="" class="ani"
+					swiper-animate-effect='bounceInLeft' swiper-animate-delay='.5s'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/yinhao.png" alt="" class="ani"
+					swiper-animate-effect='bounceInRight' swiper-animate-delay='.5s'>
 				<span class="ani" swiper-animate-effect='bounceInDown' swiper-animate-delay='1s'>王永新</span>
 			</div>
 
@@ -79,8 +126,8 @@
 				<p class="ani" swiper-animate-effect='fadeIn' swiper-animate-delay='2s'>
 					王永新，书坛散仙，军旅书法家，北京散仙书苑主任。北大兰亭书画研究院研究员，国礼艺术大师，中国文化艺术创新网艺术总监，世界华人艺术家协会理事，中国国际艺术家学会理事。祖籍河北迁安。五次荣立军功。1985—1988年就学于天津茂林书法学院。因首创《苍龙出海》独具一格，获国家版权专利，别称“苍龙圣手”。
 				</p>
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/favicon.png" alt="" class="ani" swiper-animate-effect='rotateIn'
-					swiper-animate-delay='4s'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/favicon.png" alt="" class="ani"
+					swiper-animate-effect='rotateIn' swiper-animate-delay='4s'>
 				<p class="ani" swiper-animate-effect='fadeIn' swiper-animate-delay='3s'>
 					2017年应邀参加中国通俗文艺研究会主办“一带一路·一国瓷”走向世界的国礼艺术大师项目，被“授予‘一带一路一国瓷·走向世界的国礼艺术大师’荣誉称号。2018年纪念改革开放四十周年，被中国中外名人文化研究会学术委员会授予“大国巨匠-国礼艺术大师”荣誉称号。
 				</p>
@@ -90,184 +137,198 @@
 		<!-- PAGE3 -->
 		<div class="page3">
 			<div class="common">
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing1.png" alt="" class="ani" swiper-animate-effect='slideInDown'>
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing2.png" alt="" class="ani" swiper-animate-effect='slideInUp'>
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing4.png" alt="" class="ani" swiper-animate-effect='slideInLeft'
-					swiper-animate-delay='.5s'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing1.png" alt="" class="ani"
+					swiper-animate-effect='slideInDown'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing2.png" alt="" class="ani"
+					swiper-animate-effect='slideInUp'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing4.png" alt="" class="ani"
+					swiper-animate-effect='slideInLeft' swiper-animate-delay='.5s'>
 			</div>
 
 			<div class="yin">
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/yinhao0.png" alt="" class="ani" swiper-animate-effect='bounceInLeft'
-					swiper-animate-delay='.5s'>
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/yinhao.png" alt="" class="ani" swiper-animate-effect='bounceInRight'
-					swiper-animate-delay='.5s'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/yinhao0.png" alt="" class="ani"
+					swiper-animate-effect='bounceInLeft' swiper-animate-delay='.5s'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/yinhao.png" alt="" class="ani"
+					swiper-animate-effect='bounceInRight' swiper-animate-delay='.5s'>
 				<span class="ani" swiper-animate-effect='bounceInDown' swiper-animate-delay='1s'>作品展示</span>
 			</div>
 
 			<div class="con">
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/zuopin4.jpg" alt="" class="ani" swiper-animate-effect='bounceInLeft'
-					swiper-animate-delay='2s'>
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/zuopin5.jpg" alt="" class="ani" swiper-animate-effect='bounceInRight'
-					swiper-animate-delay='3s'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/zuopin4.jpg" alt="" class="ani"
+					swiper-animate-effect='bounceInLeft' swiper-animate-delay='2s'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/zuopin5.jpg" alt="" class="ani"
+					swiper-animate-effect='bounceInRight' swiper-animate-delay='3s'>
 			</div>
 		</div>
 
 		<!-- PAGE4 -->
 		<div class="page4">
 			<div class="common">
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing1.png" alt="" class="ani" swiper-animate-effect='slideInDown'>
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing2.png" alt="" class="ani" swiper-animate-effect='slideInUp'>
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing4.png" alt="" class="ani" swiper-animate-effect='slideInLeft'
-					swiper-animate-delay='.5s'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing1.png" alt="" class="ani"
+					swiper-animate-effect='slideInDown'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing2.png" alt="" class="ani"
+					swiper-animate-effect='slideInUp'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing4.png" alt="" class="ani"
+					swiper-animate-effect='slideInLeft' swiper-animate-delay='.5s'>
 			</div>
 
 			<div class="yin">
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/yinhao0.png" alt="" class="ani" swiper-animate-effect='bounceInLeft'
-					swiper-animate-delay='.5s'>
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/yinhao.png" alt="" class="ani" swiper-animate-effect='bounceInRight'
-					swiper-animate-delay='.5s'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/yinhao0.png" alt="" class="ani"
+					swiper-animate-effect='bounceInLeft' swiper-animate-delay='.5s'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/yinhao.png" alt="" class="ani"
+					swiper-animate-effect='bounceInRight' swiper-animate-delay='.5s'>
 				<span class="ani" swiper-animate-effect='bounceInDown' swiper-animate-delay='1s'>作品展示</span>
 			</div>
 
 			<div class="con">
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/zuopin2.jpg" alt="" class="ani" swiper-animate-effect='bounceInLeft'
-					swiper-animate-delay='2s'>
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/zuopin3.jpg" alt="" class="ani" swiper-animate-effect='bounceInRight'
-					swiper-animate-delay='3s'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/zuopin2.jpg" alt="" class="ani"
+					swiper-animate-effect='bounceInLeft' swiper-animate-delay='2s'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/zuopin3.jpg" alt="" class="ani"
+					swiper-animate-effect='bounceInRight' swiper-animate-delay='3s'>
 			</div>
 		</div>
 
 		<!-- PAGE5 -->
 		<div class="page5">
 			<div class="common">
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing1.png" alt="" class="ani" swiper-animate-effect='slideInDown'>
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing2.png" alt="" class="ani" swiper-animate-effect='slideInUp'>
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing4.png" alt="" class="ani" swiper-animate-effect='slideInLeft'
-					swiper-animate-delay='.5s'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing1.png" alt="" class="ani"
+					swiper-animate-effect='slideInDown'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing2.png" alt="" class="ani"
+					swiper-animate-effect='slideInUp'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing4.png" alt="" class="ani"
+					swiper-animate-effect='slideInLeft' swiper-animate-delay='.5s'>
 			</div>
 
 			<div class="yin">
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/yinhao0.png" alt="" class="ani" swiper-animate-effect='bounceInLeft'
-					swiper-animate-delay='.5s'>
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/yinhao.png" alt="" class="ani" swiper-animate-effect='bounceInRight'
-					swiper-animate-delay='.5s'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/yinhao0.png" alt="" class="ani"
+					swiper-animate-effect='bounceInLeft' swiper-animate-delay='.5s'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/yinhao.png" alt="" class="ani"
+					swiper-animate-effect='bounceInRight' swiper-animate-delay='.5s'>
 				<span class="ani" swiper-animate-effect='bounceInDown' swiper-animate-delay='1s'>作品展示</span>
 			</div>
 
 			<div class="con">
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/zuopin2-2.jpg" alt="" class="ani" swiper-animate-effect='rotateIn'
-					swiper-animate-delay='2s'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/zuopin2-2.jpg" alt="" class="ani"
+					swiper-animate-effect='rotateIn' swiper-animate-delay='2s'>
 			</div>
 		</div>
 
 		<!-- PAGE6 -->
 		<div class="page6">
 			<div class="common">
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing1.png" alt="" class="ani" swiper-animate-effect='slideInDown'>
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing2.png" alt="" class="ani" swiper-animate-effect='slideInUp'>
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing4.png" alt="" class="ani" swiper-animate-effect='slideInLeft'
-					swiper-animate-delay='.5s'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing1.png" alt="" class="ani"
+					swiper-animate-effect='slideInDown'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing2.png" alt="" class="ani"
+					swiper-animate-effect='slideInUp'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing4.png" alt="" class="ani"
+					swiper-animate-effect='slideInLeft' swiper-animate-delay='.5s'>
 			</div>
 
 			<div class="yin">
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/yinhao0.png" alt="" class="ani" swiper-animate-effect='bounceInLeft'
-					swiper-animate-delay='.5s'>
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/yinhao.png" alt="" class="ani" swiper-animate-effect='bounceInRight'
-					swiper-animate-delay='.5s'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/yinhao0.png" alt="" class="ani"
+					swiper-animate-effect='bounceInLeft' swiper-animate-delay='.5s'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/yinhao.png" alt="" class="ani"
+					swiper-animate-effect='bounceInRight' swiper-animate-delay='.5s'>
 				<span class="ani" swiper-animate-effect='bounceInDown' swiper-animate-delay='1s'>作品展示</span>
 			</div>
 
 			<div class="con">
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/zuopin3-3.jpg" alt="" class="ani" swiper-animate-effect='flipInX'
-					swiper-animate-delay='2s'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/zuopin3-3.jpg" alt="" class="ani"
+					swiper-animate-effect='flipInX' swiper-animate-delay='2s'>
 
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/zuopin7.jpg" alt="" class="ani" swiper-animate-effect='flipInY'
-					swiper-animate-delay='3s'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/zuopin7.jpg" alt="" class="ani"
+					swiper-animate-effect='flipInY' swiper-animate-delay='3s'>
 			</div>
 		</div>
 
 		<!-- PAGE7 -->
 		<div class="page7">
 			<div class="common">
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing1.png" alt="" class="ani" swiper-animate-effect='slideInDown'>
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing2.png" alt="" class="ani" swiper-animate-effect='slideInUp'>
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing4.png" alt="" class="ani" swiper-animate-effect='slideInLeft'
-					swiper-animate-delay='.5s'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing1.png" alt="" class="ani"
+					swiper-animate-effect='slideInDown'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing2.png" alt="" class="ani"
+					swiper-animate-effect='slideInUp'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing4.png" alt="" class="ani"
+					swiper-animate-effect='slideInLeft' swiper-animate-delay='.5s'>
 			</div>
 
 			<div class="yin">
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/yinhao0.png" alt="" class="ani" swiper-animate-effect='bounceInLeft'
-					swiper-animate-delay='.5s'>
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/yinhao.png" alt="" class="ani" swiper-animate-effect='bounceInRight'
-					swiper-animate-delay='.5s'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/yinhao0.png" alt="" class="ani"
+					swiper-animate-effect='bounceInLeft' swiper-animate-delay='.5s'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/yinhao.png" alt="" class="ani"
+					swiper-animate-effect='bounceInRight' swiper-animate-delay='.5s'>
 				<span class="ani" swiper-animate-effect='bounceInDown' swiper-animate-delay='1s'>作品展示</span>
 			</div>
 
 			<div class="con">
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/zuopin8.jpg" alt="" class="ani" swiper-animate-effect='fadeIn'
-					swiper-animate-delay='2s'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/zuopin8.jpg" alt="" class="ani"
+					swiper-animate-effect='fadeIn' swiper-animate-delay='2s'>
 
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/zuopin9.jpg" alt="" class="ani" swiper-animate-effect='fadeIn'
-					swiper-animate-delay='3s'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/zuopin9.jpg" alt="" class="ani"
+					swiper-animate-effect='fadeIn' swiper-animate-delay='3s'>
 
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/zuopin10.jpg" alt="" class="ani" swiper-animate-effect='fadeIn'
-					swiper-animate-delay='4s'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/zuopin10.jpg" alt="" class="ani"
+					swiper-animate-effect='fadeIn' swiper-animate-delay='4s'>
 			</div>
 		</div>
 
 		<!-- PAGE8 -->
 		<div class="page8">
 			<div class="common">
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing1.png" alt="" class="ani" swiper-animate-effect='slideInDown'>
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing2.png" alt="" class="ani" swiper-animate-effect='slideInUp'>
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing4.png" alt="" class="ani" swiper-animate-effect='slideInLeft'
-					swiper-animate-delay='.5s'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing1.png" alt="" class="ani"
+					swiper-animate-effect='slideInDown'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing2.png" alt="" class="ani"
+					swiper-animate-effect='slideInUp'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing4.png" alt="" class="ani"
+					swiper-animate-effect='slideInLeft' swiper-animate-delay='.5s'>
 			</div>
 
 			<div class="yin">
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/yinhao0.png" alt="" class="ani" swiper-animate-effect='bounceInLeft'
-					swiper-animate-delay='.5s'>
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/yinhao.png" alt="" class="ani" swiper-animate-effect='bounceInRight'
-					swiper-animate-delay='.5s'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/yinhao0.png" alt="" class="ani"
+					swiper-animate-effect='bounceInLeft' swiper-animate-delay='.5s'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/yinhao.png" alt="" class="ani"
+					swiper-animate-effect='bounceInRight' swiper-animate-delay='.5s'>
 				<span class="ani" swiper-animate-effect='bounceInDown' swiper-animate-delay='1s'>作品展示</span>
 			</div>
 
 			<div class="con">
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/zuopin1.jpg" alt="" class="ani" swiper-animate-effect='flipInX'
-					swiper-animate-delay='2s'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/zuopin1.jpg" alt="" class="ani"
+					swiper-animate-effect='flipInX' swiper-animate-delay='2s'>
 
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/zuopin6.jpg" alt="" class="ani" swiper-animate-effect='flipInY'
-					swiper-animate-delay='3s'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/zuopin6.jpg" alt="" class="ani"
+					swiper-animate-effect='flipInY' swiper-animate-delay='3s'>
 			</div>
 		</div>
 
 		<!-- PAGE9 -->
 		<div class="page9">
 			<div class="common">
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing1.png" alt="" class="ani" swiper-animate-effect='slideInDown'>
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing2.png" alt="" class="ani" swiper-animate-effect='slideInUp'>
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing4.png" alt="" class="ani" swiper-animate-effect='slideInLeft'
-					swiper-animate-delay='.5s'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing1.png" alt="" class="ani"
+					swiper-animate-effect='slideInDown'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing2.png" alt="" class="ani"
+					swiper-animate-effect='slideInUp'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/beijing4.png" alt="" class="ani"
+					swiper-animate-effect='slideInLeft' swiper-animate-delay='.5s'>
 			</div>
 
 			<div class="yin">
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/yinhao0.png" alt="" class="ani" swiper-animate-effect='bounceInLeft'
-					swiper-animate-delay='.5s'>
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/yinhao.png" alt="" class="ani" swiper-animate-effect='bounceInRight'
-					swiper-animate-delay='.5s'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/yinhao0.png" alt="" class="ani"
+					swiper-animate-effect='bounceInLeft' swiper-animate-delay='.5s'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/yinhao.png" alt="" class="ani"
+					swiper-animate-effect='bounceInRight' swiper-animate-delay='.5s'>
 				<span class="ani" swiper-animate-effect='bounceInDown' swiper-animate-delay='1s'>作品展示</span>
 			</div>
 
 			<div class="con">
-				<img src="http://ps4fzlt6t.bkt.clouddn.com/zuopin1-1.jpg" alt="" class="ani" swiper-animate-effect='fadeIn'
-					swiper-animate-delay='2s'>
+				<img src="http://ps4fzlt6t.bkt.clouddn.com/zuopin1-1.jpg" alt="" class="ani"
+					swiper-animate-effect='fadeIn' swiper-animate-delay='2s'>
 			</div>
 		</div>
 	</main>
 
 	<!-- IMPORT JS -->
 	<script type="text/javascript" src="runtime.eb9762bffc276c701715.js"></script>
-	<script type="text/javascript" src="main.3f7931782eae73fc402a.js"></script>
+	<script type="text/javascript" src="main.f225d2ac5b66945cb7e0.js"></script>
 </body>
 
 </html>
